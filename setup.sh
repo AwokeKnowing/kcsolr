@@ -7,5 +7,6 @@
 #add vtt files as text files
 #docker exec -it --user=solr my_solr bin/post -c gettingstarted  mydata/ -filetypes vtt -type text/plain
 
-
+docker stop kcsolr
+docker rm -v kcsolr
 docker run --name kcsolr -d -p 8983:8983 solr solr-create -c knowledgecity
