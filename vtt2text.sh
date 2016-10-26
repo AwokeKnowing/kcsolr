@@ -1,7 +1,7 @@
 #!/bin/bash
-#usage: vtt2text.sh file.vtt
+#usage: cat file.vtt | bash vtt2text.sh
 #returns: all text without timing on single line
-sed 's/\r$//' "$1"                     |\
+sed 's/\r$//'                          |\
 grep -E -v -- "-->|^$|^[0-9]+$|WEBVTT" |\
 tr '\n' ' '                            |\
 tr -s ' '                              |\
