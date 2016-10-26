@@ -12,6 +12,6 @@ curl -X POST -H 'Content-type:application/json' --data-binary '{
     { "source": "vttPureText",     "dest": ["allSearchText"] },
     { "source": "courseId",        "dest": ["allSearchText"] },
     { "source": "lessonId",        "dest": ["allSearchText"] },
-    { "source": "lessonTitle",     "dest": ["allSearchText"] },
+    { "source": "lessonTitle",     "dest": ["allSearchText"] }
   ]
 }' http://localhost:8983/solr/knowledgecity/schema

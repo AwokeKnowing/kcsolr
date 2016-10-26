@@ -34,9 +34,9 @@ echo
 
 echo "Adding lessons schema"
 bash addschema-lessons.sh
-echo 
-echo "Indexing test data"
-bash test-lessons.sh
+#echo 
+#echo "Indexing test data"
+#bash test-lessons.sh
 echo
 echo "Setup complete!"
 echo "--------------------------------------------------"
